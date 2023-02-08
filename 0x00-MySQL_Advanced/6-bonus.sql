@@ -1,5 +1,6 @@
 --- creates a stored procedure AddBonus
 --- that adds a new correction for a student.
+DELIMITER $$
 CREATE PROCEDURE AddBonus ( user_id INT, project_name VARCHAR(225), score FLOAT)
 BEGIN
     DECLARE project_count INT DEFAULT 0;
